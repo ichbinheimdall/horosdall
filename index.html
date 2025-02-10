@@ -1,1 +1,32 @@
-coming soon...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_3orEy1FWbpBN3uNGVouQLFoLQhjs%26teamId%3Dheimdalls-projects-4bc4a771%26withStatus%3D1&w=1920&q=75') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+</body>
+</html>
