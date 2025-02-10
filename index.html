@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen Image</title>
+    <title>Horosdall - Coming Soon</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            width: 100%;
-            height: 100%;
+            background-color: black;
+            color: #00ff00;
+            font-family: monospace;
+            text-align: center;
             overflow: hidden;
         }
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: url('https://vercel.com/_next/image?url=%2Fapi%2Fscreenshot%3Fdark%3D1%26deploymentId%3Ddpl_3orEy1FWbpBN3uNGVouQLFoLQhjs%26teamId%3Dheimdalls-projects-4bc4a771%26withStatus%3D1&w=1920&q=75') no-repeat center center;
-            background-size: cover;
+        .matrix {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .matrix-text {
+            animation: flicker 1.5s infinite alternate;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            100% { opacity: 0.5; }
         }
     </style>
 </head>
 <body>
-    <div class="background"></div>
+    <div class="matrix">
+        <div class="matrix-text">HOROSDALL <br><br> COMING SOON</div>
+    </div>
 </body>
 </html>
